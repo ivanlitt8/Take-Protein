@@ -20,45 +20,39 @@
 	</header>
 	<menu>
 		<h2>Crea tu cuenta</h2> 
-		<br>
-		<form>
+		<form action="show_data.html" target="_blank">
 			<p>
-				<label for="nombre">Nombre</label><br>
-				<input type="text" name="nombre">
+				<label for="nombre">Nombre: </label><input type="text" name="nombre" placeholder="Ingrese nombre aqui..."></imput>
 			</p>
 			<p>
-				<label for="apellido">Apellido</label><br>
-				<input name="apellido"></input>
+				<label for="apellido">Apellido: </label><input name="apellido" placeholder="Ingrese apellido aqui..."></input>
+			</p>
+			<p> Genero:
+				<input type="radio" name="gender" value="hombre" checked>Hombre
+				<input type="radio" name="gender" value="Mujer">Mujer
+				<input type="radio" name="gender" value="Otro"> Otro 
 			</p>
 			<p>
-				<label for="direccion">Dirección</label><br>
-				<input name="direccion"></input>
+				<label for="direccion">Dirección: </label><input name="direccion" placeholder="Ingrese direccion aqui..."></input>
 			</p>
 			<p>
-				<label for="codPost">Código postal</label><br>
-				<input name="codPost"></input>
+				<label for="codPost">Código postal: </label><input name="codPost" placeholder="Ingrese código postal aqui..."></input>
 			</p>
 			<p>
-				<label for="mail">Correo</label><br>
-				<input name="mail"></input>
+				<label for="mail">Correo: </label><input name="mail" placeholder="example@mail.com..."></input>
 			</p>
 			<p>
-				<label for="contraseña">Contraseña</label><br>
-				<input name="contraseña"></input>
+				<label for="contraseña">Contraseña: </label><input name="contraseña" placeholder="Nueva contraseña..."></input>
 			</p>
 			<p>
-				<label for="confirmContraseña">Confirmar contraseña</label><br>
-				<input name="confirmContraseña"></input>
+				<label for="confirmContraseña">Confirmar contraseña: </label><input name="confirmContraseña" placeholder="Confirme contraseña..."></input>
 			</p>
-			<p>
-				<label for="edad">Edad</label><br>
-				<select name="edad">
-					<option value="mayor">Mayor de edad</option>
-					<option value="adulto">Adulto</option>
-					<option value="65">Mayor de 65 años</option>
-				</select>
-			</p>
-			<input type="submit" value="Enviar email" />
+			<p> Deseo recibir informacion sobre: <br>
+				<input type="checkbox" name="estudio" value="Newsletter de TakeProtein"> Newsletter de TakeProtein <br>
+				<input type="checkbox" name="estudio" value="Descuentos y promociones" > Descuentos y promociones <br>
+				<input type="checkbox" name="estudio" value="Suplementacion deportiva y nutricion" > Suplementacion deportiva y nutricion <br>
+			</p>        
+				<input type="submit" value="Registrarse"/>
 		</form>
 	</menu>
 	<footer style="background-color: rgb(162, 55, 189); text-align: center;">
