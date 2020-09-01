@@ -23,21 +23,22 @@ footer{
     max-width: 400px;
 }
 .info h1{
-    font-size: 20px;
+    font-size: 18px;
 }
 .info p{
-    font-size: 15px;
+    font-size: 13px;
     color: whitesmoke;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
 }
 .redes{
     max-width: 400px;
 }
 .redes h1{
-    font-size: 20px;
+    font-size: 18px;
 }
 .redes line{
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
 }
 .line a{
@@ -45,16 +46,16 @@ footer{
     height: 20px;
 }
 .redes label{
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 .extra{
     max-width: 400px;
 }
 .extra h1{
-    font-size: 22px;
+    font-size: 18px;
 }
-.line1{
+.extra line1{
     margin-top: 20px;
     display: flex;
 }
