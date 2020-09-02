@@ -11,7 +11,7 @@ footer{
 }
 .containerAll{
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: auto;
     padding: 20px;
 }
@@ -72,7 +72,7 @@ footer{
     width: 100%;
     background: #444444;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px;
 }
 .copyright{
