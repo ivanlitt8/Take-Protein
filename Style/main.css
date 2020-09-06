@@ -15,18 +15,18 @@ footer{
     margin: auto;
     padding: 20px;
 }
-.containerUpper{
+.containerAll-upper{
     display: flex;
     justify-content: space-between;
 }
 .info{
     max-width: 400px;
 }
-.info h1{
+.info__tittle{
     font-size: 18px;
 }
-.info p{
-    font-size: 15%;
+.info__tittle-content{
+    font-size: 15px;
     color: whitesmoke;
     margin-top: 10px;
     margin-right: 20px;
@@ -34,41 +34,42 @@ footer{
 .redes{
     max-width: 400px;
 }
-.redes h1{
+.redes__tittle{
     font-size: 18px;
 }
-.redes line{
+.redes__line{
     margin-top: 50px;
-    display: flex;
+    display: flex;;
 }
-.line a{
+.redes__line-link i{
+    color: whitesmoke;
     width: 20px;
     height: 20px;
 }
-.redes label{
-    margin-top: 40px;
-    margin-left: 40px;
+.redes__line-label{
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .extra{
     max-width: 400px;
 }
-.extra h1{
+.extra__tittle{
     font-size: 18px;
 }
-.extra line1{
+.extra__line{
     margin-top: 20px;
     display: flex;
 }
-.line1 i{
+.extra__line i{
     width: 36px;
     height: 36px;
 }
-.line1 label{
+.extra__line-label{
     margin-left: 20px;
     max-width: 170px;
     margin-top: 10px;
 }
-.containerBottom{
+.containerAll-bottom{
     width: 100%;
     background: #444444;
     display: flex;
@@ -79,8 +80,11 @@ footer{
     text-align: center;
     color: whitesmoke;
 }
-.copyright a{
+.copyright__link{
     text-decoration: none;
     color: whitesmoke;
     font-weight: bold;
+}
+.copyright__link i{
+    color: whitesmoke;
 }
