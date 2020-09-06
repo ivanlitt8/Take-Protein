@@ -58,7 +58,7 @@ footer{
 }
 .extra__line{
     margin-top: 20px;
-    display: flex;
+    display: block;
 }
 .extra__line i{
     width: 36px;
