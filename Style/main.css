@@ -95,6 +95,9 @@ footer{
     .containerAll-upper{
         flex-wrap: wrap;
     }
+    .info{
+        max-width: 100%;
+    }
     .redes{
         margin-top: 30px;
     }
