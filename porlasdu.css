@@ -13,74 +13,102 @@ footer{
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 20px;
+    padding: 20px 40px 0px;
 }
-.containerUpper{
+.containerAll-upper{
     display: flex;
     justify-content: space-between;
 }
 .info{
     max-width: 400px;
 }
-.info h1{
-    font-size: 18px;
+.info__tittle{
+    font-size: 22px;
+    color:#E0EA17;
 }
-.info p{
-    font-size: 13px;
+.info__tittle-content{
+    font-size: 14px;
     color: whitesmoke;
-    margin-top: 10px;
-    margin-right: 20px;
+    margin-top: 20px;
 }
 .redes{
     max-width: 400px;
+    margin-bottom: 10px;
+    display: block;
 }
-.redes h1{
-    font-size: 18px;
+.redes__tittle{
+    font-size: 22px;
+    color:#E0EA17;
 }
-.redes line{
-    margin-top: 50px;
+.redes__line{
+    margin-top: 20px;
     display: flex;
 }
-.line a{
-    width: 20px;
-    height: 20px;
+.redes__line-link i{
+    color: whitesmoke;
+    font-size: 20px;
 }
-.redes label{
-    margin-top: 40px;
-    margin-left: 40px;
+.redes__line-label{
+    margin-top: 2px;
+    margin-left: 18px;
+    color: whitesmoke;
 }
 .extra{
     max-width: 400px;
 }
-.extra h1{
-    font-size: 18px;
+.extra__tittle{
+    font-size: 22px;
+    color:#E0EA17;
 }
-.extra line1{
+.extra__line{
     margin-top: 20px;
     display: flex;
 }
-.line1 i{
-    width: 36px;
-    height: 36px;
+.extra__line i{
+    font-size: 20px
 }
-.line1 label{
+.extra__line-label{
     margin-left: 20px;
-    max-width: 170px;
-    margin-top: 10px;
+    max-width: 150px;
+    margin-top: 2px;
+    color: whitesmoke;
+    text-decoration: none;
 }
-.containerBottom{
+.containerAll-bottom{
     width: 100%;
     background: #444444;
+}
+.footer{
+    max-width: 1200px;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px;
 }
 .copyright{
     text-align: center;
     color: whitesmoke;
 }
-.copyright a{
+.copyright__link{
     text-decoration: none;
     color: whitesmoke;
     font-weight: bold;
+}
+.copyright__link i{
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 1100px){
+    .containerAll-upper{
+        flex-wrap: wrap;
+    }
+    .info{
+        max-width: 100%;
+    }
+    .redes{
+        margin-top: 30px;
+    }
+    .extra{
+        margin-top: 30px;
+    }
 }
