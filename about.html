@@ -5,8 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Take Protein</title>
 	<script src="https://kit.fontawesome.com/56bb6296bc.js" crossorigin="anonymous"></script>
-	<link rel="icon" href="imagenes/favicon.ico">
 	<link rel="stylesheet" href="Style/main.css">
+	<link rel="stylesheet" type="text/ccs" href="Style/normalize.css">
+	<link rel="icon" href="imagenes/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header>
@@ -35,51 +37,88 @@
 	</menu>
 	<footer>
 		<div class="containerAll">
-			<div class="containerUpper">
+			<div class="containerAll-upper">
 				<div class="info">
-					<h1>Mas info de la empresa</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-					Vivamus sed nisl vitae eros laoreet convallis nec non diam. 
-					Maecenas tempor, ligula in luctus congue, libero eros 
-					sodales sem, eu porttitor sem lorem et elit. Vivamus et 
-					euismod erat. Morbi at finibus odio</p>
+					<h1 class="info__tittle">Mas info de la empresa</h1>
+					<p class="info__tittle-content">Lorem ipsum dolor sit amet, 
+						consectetur adipiscing elit. Vivamus sed nisl vitae eros 
+						laoreet convallis nec non diam. Maecenas tempor, ligula 
+						in luctus congue, libero eros sodales sem, eu porttitor
+						sem lorem et elit. Vivamus et euismod erat. Morbi at
+						finibus odio
+					</p>
 				</div>
 				<div class="redes">
-					<h1>Nuestras redes</h1>
-					<label class="line">
-						<a href="https://www.linkedin.com/in/ivan-litt-71a6381b2/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-					</label>
-					<label class="line">
-						<a href="https://goo.gl/maps/Wperwt1fii1bziYbA" target="_blank"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></a>
-					</label>
-					<label class="line">
-						<a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-					</label>
+					<h1 class="redes__tittle">Nuestras redes</h1>
+					<div class="redes__line">
+						<a class="redes__line-link" href="https://www.linkedin.com/in/ivan-litt-71a6381b2/"target="_blank">
+							<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+						</a>
+						<label class=redes__line-label>Seguinos en LinkedIn</label>
+					</div>
+					<div class="redes__line">
+						<a class="redes__line-link" href="https://twitter.com/home" target="_blank">
+							<i class="fab fa-twitter-square" aria-hidden="true"></i>
+						</a>
+						<label class=redes__line-label>Seguinos en Twitter</label>
+					</div>
+					<div class="redes__line">
+						<a class="redes__line-link" href=https://www.facebook.com/ target="_blank">
+							<i class="fab fa-facebook-f" aria-hidden="true"></i>
+						</a>
+						<label class=redes__line-label>Seguinos en Facebook</label>
+					</div>
+					<div class="redes__line">
+						<a class="redes__line-link" href="https://web.whatsapp.com/" target="_blank">
+							<i class="fab fa-whatsapp" aria-hidden="true"></i>
+						</a>
+						<label class=redes__line-label>Consultanos por Whatsapp</label>
+					</div>
+					<div class="redes__line">
+						<a class="redes__line-link" href="https://goo.gl/maps/Wperwt1fii1bziYbA" target="_blank">
+							<i class="fas fa-hands-helping" aria-hidden="true"></i>
+						</a>
+						<label class=redes__line-label>Trabaja con nosotros</label>
+					</div>
 				</div>
 				<div class="extra">
-					<h1>Ayuda</h1>
-					<label class="line1">
-						<i class="fas fa-info"></i>
-						<div>¿Cómo Comprar?</div>
-					</label>
-					<label class="line1">
-						<i class="fas fa-credit-card"></i>
-						<div>Medios de pago</div>
-					</label>
-					<label class="line1">
-						<i class="fas fa-truck-loading"></i>
-						<div>Costos de Envío</div>
-					<label class="line1">
-						<i class="fas fa-hands-helping"></i>
-						<div>Preguntas Frecuentes</div>
-					</label>
+					<h1 class="extra__tittle">Ayuda</h1>
+					<div class="extra__line">
+						<a class="redes__line-link" href="construction.html"target="_blank">
+							<i class="fas fa-info"></i>
+						</a>
+						<label class="extra__line-label">¿Cómo Comprar?</label>
+					</div>
+					<div class="extra__line">
+						<a class="redes__line-link" href="construction.html"target="_blank">
+							<i class="fas fa-credit-card"></i>
+						</a>
+						<label class="extra__line-label">Medios de pago</label>
+					</div>
+					<div class="extra__line">
+						<a class="redes__line-link" href="construction.html"target="_blank">
+							<i class="fas fa-truck-loading"></i>
+						</a>
+						<label class="extra__line-label">Costos de Envío</label>
+					</div>
+					<div class="extra__line">
+						<a class="redes__line-link" href="construction.html"target="_blank">
+							<i class="far fa-clipboard"></i>
+						</a>
+						<label class="extra__line-label">Preguntas Frecuentes</label>
+					</div>
 				</div>
 			</div>
 		</div>	
-		<div class="containerBottom">
+		<div class="containerAll-bottom">
+			<div class="footer"></div>
 				<div class="copyright">
-					©2020 Todos los Derechos Reservados - <a href="https://www.buenosaires.gob.ar/educacion/codo-codo" target="_blank">CodoACodo <i class="fas fa-code" aria-hidden="true"></i></a>
+					©2020 Todos los Derechos Reservados -
+					<a class="copyright__link" href="https://www.buenosaires.gob.ar/educacion/codo-codo" target="_blank">
+						CodoACodo <i class="fas fa-code" aria-hidden="true"></i>
+					</a>
 				</div>
+			</div>
 		</div>
 	</footer>
 </body>
