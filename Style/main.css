@@ -13,65 +13,67 @@ footer{
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 2em;
+    padding: 20px 40px 0px;
 }
 .containerAll-upper{
     display: flex;
     justify-content: space-between;
 }
 .info{
-    max-width: 25em;
+    max-width: 400px;
 }
 .info__tittle{
-    font-size: 1.2em;
+    font-size: 22px;
 }
 .info__tittle-content{
-    font-size: 1em;
+    font-size: 14px;
     color: whitesmoke;
-    margin-top: 0.8em;
-    margin-right: 1.4em;
+    margin-top: 20px;
 }
 .redes{
-    max-width: 25em;
+    max-width: 400px;
 }
 .redes__tittle{
-    font-size: 1.2em;
+    font-size: 22px;
 }
 .redes__line{
-    margin-top: .8em;
-    display: flex;;
+    margin-top: 20px;
+    display: flex;
 }
 .redes__line-link i{
     color: whitesmoke;
-    width: 1.25em;
-    height: 1.25em;
+    font-size: 20px;
 }
 .redes__line-label{
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 2px;
+    margin-left: 18px;
+    color: whitesmoke;
 }
 .extra{
     max-width: 400px;
 }
 .extra__tittle{
-    font-size: 18px;
+    font-size: 22px;
 }
 .extra__line{
     margin-top: 20px;
-    display: block;
+    display: flex;        /*ojo aca ue se sale un icono de la fila*/
 }
 .extra__line i{
-    width: 36px;
-    height: 36px;
+    font-size: 20px
 }
 .extra__line-label{
     margin-left: 20px;
-    max-width: 170px;
-    margin-top: 10px;
+    max-width: 150px;
+    margin-top: 2px;
 }
 .containerAll-bottom{
     width: 100%;
     background: #444444;
+}
+.footer{
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -87,4 +89,16 @@ footer{
 }
 .copyright__link i{
     color: whitesmoke;
+}
+
+@media screen and (max-width: 1100px){
+    .containerAll-upper{
+        flex-wrap: wrap;
+    }
+    .redes{
+        margin-top: 30px;
+    }
+    .extra{
+        margin-top: 30px;
+    }
 }
