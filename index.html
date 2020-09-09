@@ -5,27 +5,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Take Protein</title>
 	<script src="https://kit.fontawesome.com/56bb6296bc.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="Style/main.css">
+	<link rel="stylesheet" href="style__header.css">
+	<link rel="stylesheet" href="Style/style__footer.css">
 	<link rel="stylesheet" type="text/ccs" href="Style/normalize.css">
-	<link rel="icon" href="imagenes/favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="imagenes/favicon.ico">	
 </head>
 <body>
-	<header>
-		<nav>
-			<a href="index.html" title="Home">Home</a>
-			<a href="about.html" title="About">About</a>
-			<a href="contacto.html" title="Contacto">Contacto</a>
-			<a href="findus.html" title="Registro">Find Us</a>
-			<a href="sing up.html" title="Contacto">Sing Up</a>
-		</nav>
-		<h1>Take Protein</h1>
-	</header>
+	<section>
+		<header>
+			<a href="#" class="nav__logo">TakeProtein</a>
+			<div class="nav__slider" onclick="nav__slider();"></div>
+			<ul class="nav__ul">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Registrate</a></li>
+				<li><a href="#">Encontranos</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="content__container">
+			<h2>Tus suplementos<br>
+				al mejor precio</h2>
+			<p>Lorem ipsum dolor sit amet consectetur, 
+			adipisicing elit. Non, corporis. Voluptas
+			officia tempore numquam consequatur facere
+			recusandae illum labore iure provident,
+			ipsam ea perferendis eius quasi quos
+			</p><br>
+			<a class="content__catalog" href="catalog.html" title="Catalogo">Nuestro catálogo</a>
+		</div>
+	</div>
+	</section>
+	<script type="text/javascript">
+		function nav__slider(){
+			const nav__slider = document.querySelector('.nav__slider');
+			const nav__ul = document.querySelector('.nav__ul');
+			nav__slider.classList.toggle('active');
+			nav__ul.classList.toggle('active');
+	}	
+	</script>
 	<menu>
-		<h2>Tus suplementos al mejor precio</h2> 
-		<img src="imagenes\FlyerEna (5).jpg" alt="Ena" title="FlyerEna" width="100%"/>
-		<br>
-		<a href="catalog.html" title="Catalogo">Mira nuestro catálogo</a>
 	</menu>
 	<footer>
 		<div class="containerAll">
@@ -115,4 +135,3 @@
 	</footer>
 </body>
 </html>
-
