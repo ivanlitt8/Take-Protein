@@ -1,0 +1,348 @@
+
+/*////////////////////////////////////////////////////HEADER////////////////////////////////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.sectionIndex{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(bgrn.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo{
+    position: relative;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.nav__ul{
+    position: relative;
+    display: flex;
+}
+.nav__ul li{
+    list-style: none;
+}
+.nav__ul li a{
+    display: inline-block;
+    color: #fff;
+    margin-right: 40px;
+    text-decoration: none;
+}
+.nav__ul li a:hover{
+    color: #03A9F4;
+}
+.content{
+    max-width: 600px;
+}
+.content__container h2{
+    font-size: 3em;
+    color: #fff;
+    line-height: 1em;
+}
+.content__container p{
+    font-size: 1.1em;
+    color:#fff;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.content__catalog{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #03a9f4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+@media screen and (max-width: 990px){
+    header{
+        padding: 15px 40px;
+    }
+    section{
+        padding: 40px;
+        background: url(bgrn.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .content__container h2{
+        font-size: 2.5em;
+    }
+    .content__container p{
+        font-size: 1em;
+    }
+    .nav__ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 100;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav__ul.active{
+        display: flex;
+    }
+    .nav__ul li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .nav__slider{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 200;
+    }
+    .nav__slider.active{
+        background: url(close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
+}
+
+/*////////////////////////////////////////////////////FOOTER////////////////////////////////////////////////////*/
+
+footer{
+    width: 100%;
+    background-color: #222222;
+    color: whitesmoke;
+}
+.containerAll{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 40px 0px;
+}
+.containerAll-upper{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    max-width: 400px;
+}
+.info__tittle{
+    font-size: 22px;
+    color:#03a9f4;
+}
+.info__tittle-content{
+    font-size: 14px;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+.redes{
+    max-width: 400px;
+    margin-bottom: 10px;
+    display: block;
+}
+.redes__tittle{
+    font-size: 22px;
+    color:#03a9f4;
+}
+.redes__line{
+    margin-top: 20px;
+    display: flex;
+}
+.redes__line-link i{
+    color: whitesmoke;
+    font-size: 20px;
+}
+.redes__line-label{
+    margin-top: 2px;
+    margin-left: 18px;
+    color: whitesmoke;
+}
+.extra{
+    max-width: 400px;
+}
+.extra__tittle{
+    font-size: 22px;
+    color:#03a9f4;
+}
+.extra__line{
+    margin-top: 20px;
+    display: flex;
+}
+.extra__line i{
+    font-size: 20px
+}
+.extra__line-label{
+    margin-left: 20px;
+    max-width: 150px;
+    margin-top: 2px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.containerAll-bottom{
+    width: 100%;
+    background: #444444;
+}
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.copyright{
+    text-align: center;
+    color: whitesmoke;
+}
+.copyright__link{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.copyright__link i{
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 1100px){
+    .containerAll-upper{
+        flex-wrap: wrap;
+    }
+    .info{
+        max-width: 100%;
+    }
+    .redes{
+        margin-top: 30px;
+    }
+    .extra{
+        margin-top: 30px;
+    }
+}
+.aboutcontent{
+    width: 100%;
+    height: 650px;
+    background-image: url(imagenes/People4.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+.aboutcontent{
+    margin-top: 70px;
+}
+.aboutcontent__container h2{
+    font-size: 5em;
+}
+.aboutcontent__container-p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.sesgoabajo{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 30vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.sesgoarriba{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 30vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+}
+.principles__container-tittle{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+                                                             /*ojo aca*/
+.principles__container-subtittle{        
+    font-size: 22px;
+    font-weight: 300;
+    text-align: 300;
+    margin-bottom: 24px;
+}
+.backgrounds{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.backgrounds__image{
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.backgrounds__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.backgrounds__image-tittle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 73, 94, 0.815);
+}
+.backgrounds__image-tittle h2{
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff
+}
+.backgrounds__image-tittle div{
+    position: relative;
+    display: block;
+    top: 46%;
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    margin: auto;
+}
+
