@@ -245,7 +245,9 @@ footer{
 }
 
 /*////////////////////////////////////////////////////ABOUT////////////////////////////////////////////////////*/
-
+.aboutheader{
+    z-index: 10;
+}
 .aboutcontent{
     width: 100%;
     height: 650px;
@@ -259,7 +261,7 @@ footer{
     text-align: center;
 }
 .aboutcontent{
-    margin-top: 70px;
+    margin-top: 0px;
 }
 .container h2{
     font-size: 40px;
@@ -294,6 +296,7 @@ footer{
     margin: auto;
     overflow: hidden;
     padding: 52px 0;
+    margin-top: 45px;
 }
 .principles__container-tittle{
     text-align: center;
@@ -301,7 +304,6 @@ footer{
     margin-bottom: 10px;
     font-weight: 600;
 }
-                                                             /*ojo aca*/
 .principles__container-subtittle{        
     font-size: 22px;
     font-weight: 300;
@@ -371,7 +373,7 @@ footer{
     object-fit: cover;
 }
 .focus{
-    height: 900px;                         /* ESTA ES LA ALTURA */
+    height: auto;                         /* ESTA ES LA ALTURA */
     position: relative;
     background-image: linear-gradient(to bottom, #34495ed0, #222222);
     overflow: hidden;
@@ -387,4 +389,32 @@ footer{
     border-width: 0 0 30vh 100vw;
     border-style: solid;
     border-color: transparent transparent #222222 transparent;
+}
+.marca img{
+    max-width: 100%;
+    height: auto;
+}
+.container__galery{
+    text-align: center;
+    padding-bottom: 45px;
+    font-size: 40px;
+}
+.line{
+    background: #086c9b;
+    height: 6px;
+    width: 100%;
+    display: block;
+}
+.container__galery-set{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 95%;
+    gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.container__galery-set img{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
 }
