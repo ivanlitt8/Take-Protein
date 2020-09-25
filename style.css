@@ -79,10 +79,10 @@ header{
     letter-spacing: 1px;
 }
 @media screen and (max-width: 990px){
-    header{
+    .sectionIndex__header{
         padding: 15px 40px;
     }
-    section{
+    .sectionIndex{
         padding: 40px;
         background: url(bgrn.jpg);
         background-size: cover;
@@ -193,6 +193,7 @@ footer{
 }
 .extra__line{
     margin-top: 20px;
+    margin-bottom: 15px;
     display: flex;
 }
 .extra__line i{
@@ -245,6 +246,7 @@ footer{
 }
 
 /*////////////////////////////////////////////////////ABOUT////////////////////////////////////////////////////*/
+
 .aboutheader{
     z-index: 10;
 }
@@ -373,7 +375,7 @@ footer{
     object-fit: cover;
 }
 .focus{
-    height: auto;                         /* ESTA ES LA ALTURA */
+    height: auto;
     position: relative;
     background-image: linear-gradient(to bottom, #34495ed0, #222222);
     overflow: hidden;
@@ -412,6 +414,8 @@ footer{
     gap: 10px;
     padding: 40px 0;
     overflow: hidden;
+    margin: auto;
+    align-items: center;
 }
 .container__galery-set img{
     width: 100%;
