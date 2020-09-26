@@ -376,10 +376,13 @@ footer{
     padding: 20px;
     background: rgba(52, 73, 94, 0.286);
     border-radius: 100px;
-} 
+}
+.principles__container-cards-space h4{
+    padding-top: 10px;
+}
 .principles__container-cards img{
     width: 140px;
-    height: 140px;
+    height: auto;
     object-fit: cover;
 }
 .focus{
@@ -429,4 +432,17 @@ footer{
     width: 100%;
     vertical-align: top;
     object-fit: cover;
+}
+
+@media screen and (max-width: 880px){
+    .principles__container-cards-space{
+        width: 60%;
+        margin-right: 20px;
+    }
+}    
+@media screen and (max-width: 550px){
+    .principles__container-cards img{
+        width: 120px;
+        }
+    /*ACA FALTA ACHICAR TITULOS, EL SOBRE NOSOTROS DEGRADADO Y GALERIA*/
 }
