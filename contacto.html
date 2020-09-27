@@ -7,43 +7,42 @@
 	<script src="https://kit.fontawesome.com/56bb6296bc.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" type="text/ccs" href="Style/normalize.css">
-	<link rel="icon" href="imagenes/favicon.ico">
+	<link rel="icon" href="imagenes/favicon.ico">	
 </head>
 <body>
-	<header>
-		<nav>
-			<a href="index.html" title="Home">Home</a>
-			<a href="about.html" title="About">About</a>
-			<a href="contacto.html" title="Contacto">Contacto</a>
-			<a href="findus.html" title="Registro">Find Us</a>
-			<a href="sing up.html" title="Contacto">Sing Up</a>
-		</nav>
-		<h1>Take Protein</h1>
-	</header>
+	<section>
+		<header class="sectionIndex__header">
+			<a href="#" class="nav__logo">TakeProtein</a>
+			<div class="nav__slider" onclick="nav__slider();"></div>
+			<ul class="nav__ul">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="sing up.html">Registrate</a></li>
+				<li><a href="findus.html">Encontranos</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</header>
+		<section class="contentContact">
+			<section class="contentContact__container">
+				<h2>Contactenos</h2>
+				<div class="contentContact__container-form">
+				<form action="show_data.html" target="_blank">
+						<input class="inputs" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+						<input class="inputs" type="email" name="mail" id="mail" placeholder="Ingrese su correo">
+						<input class="inputs" type="number" name="number" id="numero" placeholder="Ingrese su celular">
+						<input class="inputs" type="text" name="mensaje" id="mensaje" placeholder="Su mensaje...">
+						<input class="button" type="submit" value="Enviar">
+				</form>
+				</div>
+			</section>
+			<section>
+				<div class="contentContact__container-form">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.3921144827877!2d-57.95399698476184!3d-34.9217016803784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62fa1e599af%3A0xe390865925451ca7!2sCalle%2012%201070%2C%20B1900%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1598720865775!5m2!1ses-419!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+			</section>
+		</section>
+	</section>
 	<menu>
-		<h2>Contáctenos</h2>
-	<form action="show_data.html" target="_blank">
-		<p>
-			<select name="motivo">
-				<option value="presupuesto">Presupuesto</option>
-				<option value="consulta">Consultas</option>
-				<option value="reclamo">Reclamo</option>
-			</select>
-		</p>
-		<p>
-			<label for="nombre">Nombre: </label><input type="text" name="nombre">
-		</p>
-		<p>
-			<label for="mail">Email: </label><input type="mail" name="mail">
-		</p>
-		<p>
-			<label for="telefono">Teléfono: </label><input type="telefono" name="telefono">
-		</p>
-		<p>
-			<label for="mensaje">Mensaje: </label><textarea name="mensaje"></textarea>
-		</p>
-		<input type="submit" value="Enviar" />
-	</form>
 	</menu>
 	<footer>
 		<div class="containerAll">
