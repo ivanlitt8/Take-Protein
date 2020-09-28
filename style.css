@@ -77,6 +77,11 @@ header{
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
+    transition-property: background;
+    transition-duration: .8s;
+}
+.content__catalog:hover{
+    background: #045e88;
 }
 @media screen and (max-width: 990px){
     .sectionIndex{
@@ -475,7 +480,6 @@ footer{
 	align-items: center;
 	background-image: linear-gradient(to bottom, #34495ed0, #222222);
 }
-
 .contentContact__in{
 	width: 85%;
 	height: auto;
@@ -506,7 +510,7 @@ footer{
 	text-align: center;
 }
 .contentContact__in-form h2{
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .contact-form-txt{
 	width: 100%;
@@ -544,8 +548,15 @@ footer{
 	text-transform: uppercase;
 	padding: 10px 0;
 	cursor: pointer;
-	font-size: 18px;
+    font-size: 18px;
+    transition-property: background;
+    transition-duration: .8s;
 }
 .contact-form-btn:hover{
-    background: #0684be;
+    background: #045e88;
+}
+@media screen and (max-width: 650px) {
+    .contentContact__in-map{
+        flex: 60%;
+    }
 }
