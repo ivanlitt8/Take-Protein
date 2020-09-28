@@ -476,7 +476,7 @@ footer{
 	background-image: linear-gradient(to bottom, #34495ed0, #222222);
 }
 
-.contact-in{
+.contentContact__in{
 	width: 85%;
 	height: auto;
     margin: auto;
@@ -489,23 +489,23 @@ footer{
 	background: #fff;
 	box-shadow: 0px 0px 10px 0px #666;
 }
-.contact-map{
+.contentContact__in-map{
 	width: 100%;
 	height: auto;
 	flex: 50%;
 }
-.contact-map iframe{
+.contentContact__in-map iframe{
 	width: 100%;
 	height: 100%;
 }
-.contact-form{
+.contentContact__in-form{
 	width: 100%;
 	height: auto;
 	flex: 50%;
 	padding: 30px;
 	text-align: center;
 }
-.contact-form h2{
+.contentContact__in-form h2{
 	margin-bottom: 20px;
 }
 .contact-form-txt{
