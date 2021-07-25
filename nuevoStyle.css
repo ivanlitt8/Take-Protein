@@ -1,0 +1,432 @@
+/*////////////////////////////////////////////////////HEADER////////////////////////////////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #242222;
+}
+header{
+    position: relative;
+    width: 100%;
+    padding: 5px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#242222;
+}
+.nav__logo{
+    position: relative;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.nav__ul{
+    position: relative;
+    display: flex;
+}
+.nav__ul li{
+    list-style: none;
+}
+.nav__ul li a{
+    display: inline-block;
+    color: #f9f9f9;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.nav__ul li a:hover{
+    color: #03A9F4;
+}
+.content{
+    max-width: 600px;
+}
+.content__container h2{
+    font-size: 3em;
+    color: #fff;
+    line-height: 1em;
+}
+.content__container p{
+    font-size: 1.1em;
+    color:#fff;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.content__catalog{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #03a9f4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition-property: background;
+    transition-duration: .8s;
+}
+.content__catalog:hover{
+    background: #045e88;
+}
+.flyer1{
+    background: url(imagenes/Flyer.jpg);
+    background-attachment: cover;
+    background-position: center;
+    height: 60px;
+}
+.flyer1_relleno{
+    position: relative;
+    text-align: right;
+    width: 67%;
+    height: 100%;
+    margin: 0px auto;
+    color: #fcfcfc;
+    background-color: black;
+    opacity: 0.5;
+}
+span.hs{
+    position: absolute;
+    font-size: 14px;
+    top: 29px;
+    left: 0px;
+    margin: 0px 10px;
+}
+span.envios{
+    position: absolute;
+    font-size: 20px;
+    top: 2px;
+    left: 0px;
+    margin: 0px 10px;
+}
+span.protein{
+    position: relative;
+    top:40px;
+    right: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+span.take{
+    position: relative;
+    top: 25px;
+    left: 60px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.slider{
+    margin: 0px 30px;
+}
+div.bx-pager.bx-default-pager{
+    display: none;
+}
+.botons{
+    display: flex;
+    justify-content: center;
+}
+.botons_tittle{
+    background-color: #41b3f9;
+    padding: 5px 20px;
+    color: #7a6d6d;
+    font-weight: 700;
+}
+section div button{
+    width: 350px;
+    margin: 0px 20px;
+    display: inline-block;
+    height: 200px;
+    border-radius: 26px;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.botons_fondo1{
+    background: url(imagenes/People7.jpg);
+    background-size: cover;
+    border: none;
+    border: 1px #707070;
+}
+.botons_fondo2{
+    background: url(imagenes/fitPeople.jpg);
+    background-size: cover;
+    border: none;
+    border: 1px #707070;
+}
+.botons_fondo3{
+    background: url(imagenes/People1.jpg);
+    background-size: cover;
+    border: 1px #707070;
+}
+.tittleProd{
+    text-align: center;
+    font-size: 50px ;
+    font-family:Roboto, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: #bbb2b2;
+}
+.sectionProduct{
+    display: flex;
+    justify-content: center;
+}
+.product{
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    margin: 10px;
+    color: white;
+    width: 320px;
+    height: 350px;
+}
+.product_data{
+    background-color: #d4d4d4;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: #2d2d2e;
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    bottom: 0px;
+}
+.product_price{
+    position: absolute;
+    background-color: #2e2d4b;
+    bottom: 100px;
+    right: 25px;
+    border-radius: 8px;
+}
+.product_price-price {
+    font-size: 20px;
+    font-family: Calibri, sans-serif;
+    margin: 2px 10px;
+    width: 70px;
+    text-align: center;
+}
+.product_logo{
+    background: url(../imagenes/EnaLogo.png);
+}
+.product_fondo {
+    margin: 0px;  
+    position: absolute;
+    top: 30px;
+}
+i.fa-solid.fa-circle-check {
+    color: #1da1f2;
+}
+.product_fondo-foto{
+    height:190px;
+}
+.product {
+    width: 260px;
+}
+.product_fondo-foto {
+    width: 260px;
+}
+.product_logo{
+    background-color: black;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    bottom: 85px;
+    left: 20px;
+}
+.logo{
+    border-radius: 60px;
+    width: 60px;
+    height: auto;
+}
+.product_data {
+    text-align: center;
+}
+.product_data h3 {
+    font-size: 16px;
+    margin: 10px;
+    position: relative;
+    top: 20px;
+}
+.data{
+    position: absolute;
+    bottom: 10px;
+    color: black;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    justify-content: space-between;
+}
+.data span {
+    margin: 6px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 990px){
+    .sectionAbout{
+        padding: 0px;
+        background-size: cover;
+        background-position: center;
+    }
+    .content__container h2{
+        font-size: 2.5em;
+    }
+    .content__container p{
+        font-size: 1em;
+    }
+    .nav__ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 100;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav__ul.active{
+        display: flex;
+    }
+    .nav__ul li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .nav__slider{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 200;
+    }
+    .nav__slider.active{
+        background: url(close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
+}
+/*////////////////////////////////////////////////////FOOTER////////////////////////////////////////////////////*/
+
+footer{
+    width: 100%;
+    background-color: #222222;
+    color: whitesmoke;
+}
+.containerAll{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 40px 0px;
+}
+.containerAll-upper{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    max-width: 400px;
+}
+.info__tittle{
+    font-size: 22px;
+    color:#03a9f4;
+}
+.info__tittle-content{
+    font-size: 14px;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+.redes{
+    max-width: 400px;
+    margin-bottom: 10px;
+    display: block;
+}
+.redes__tittle{
+    font-size: 22px;
+    color:#03a9f4;
+}
+.redes__line{
+    margin-top: 20px;
+    display: flex;
+}
+.redes__line-link i{
+    color: whitesmoke;
+    font-size: 20px;
+}
+.redes__line-label{
+    margin-top: 2px;
+    margin-left: 18px;
+    color: whitesmoke;
+}
+.extra{
+    max-width: 400px;
+}
+.extra__tittle{
+    font-size: 22px;
+    color:#03a9f4;
+}
+.extra__line{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+}
+.extra__line i{
+    font-size: 20px
+}
+.extra__line-label{
+    margin-left: 20px;
+    max-width: 150px;
+    margin-top: 2px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.containerAll-bottom{
+    width: 100%;
+    background: #444444;
+}
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.copyright{
+    text-align: center;
+    color: whitesmoke;
+}
+.copyright__link{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.copyright__link i{
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 1100px){
+    .containerAll-upper{
+        flex-wrap: wrap;
+    }
+    .info{
+        max-width: 100%;
+    }
+    .redes{
+        margin-top: 30px;
+    }
+    .extra{
+        margin-top: 30px;
+    }
+}
+/*//////////////////////////////////////////////////NUEVO-CATALOG/////////////////////////////////////////////////*
