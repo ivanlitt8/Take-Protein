@@ -13,7 +13,7 @@ body {
 header{
     position: relative;
     width: 100%;
-    padding: 5px 40px;
+    padding: 15px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -224,7 +224,7 @@ i.fa-solid.fa-circle-check {
 .product_fondo-foto {
     width: 220px;
     height: auto;
-  }
+}
 .product_logo{
     background-color: black;
     position: absolute;
@@ -310,7 +310,14 @@ i.fa-solid.fa-circle-check {
     top: 7px;  
     font-weight: 500;
 }
-
+.textos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #878484;
+    text-transform: uppercase;
+    margin: 30px;
+}
 @media screen and (max-width: 990px){
     .sectionAbout{
         padding: 0px;
