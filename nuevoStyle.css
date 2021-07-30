@@ -72,6 +72,7 @@ header{
 .content__catalog:hover{
     background: #045e88;
 }
+/*////////////////////////////////////////////////////FLYER////////////////////////////////////////////////////*/
 .flyer1{
     background: url(imagenes/Flyer.jpg);
     background-attachment: cover;
@@ -116,12 +117,7 @@ span.take{
     font-size: 15px;
     text-transform: uppercase;
 }
-.slider{
-    margin: 0px 30px;
-}
-div.bx-pager.bx-default-pager{
-    display: none;
-}
+/*////////////////////////////////////////////////////BUTTONS////////////////////////////////////////////////////*/
 .botons{
     display: flex;
     justify-content: center;
@@ -159,6 +155,53 @@ section div button{
     background-size: cover;
     border: 1px #707070;
 }
+/*////////////////////////////////////////////////////SIDEBAR////////////////////////////////////////////////////*/
+.ubication{
+    color: white;
+    font-size: 0.8em;
+    margin-top: 10px;  
+}
+.categoria-contentent{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    height: 800px
+}
+.categoria-contentent h4 {
+    font-size: 14px;
+    line-height: 50px;
+}
+.categoria{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px;
+}
+.categoria hr{
+    height: 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.product-grid .row {
+    margin-top: 50px;
+}
+.product-grid h2{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+.selector{
+    float: right;
+}
+.selector h4, select{
+    display: inline;
+    font-size: 14px ;
+}
+.selector h4{
+    color: white;
+}
+/*////////////////////////////////////////////////////PRODUCTS////////////////////////////////////////////////////*/
 .tittleProd{
     text-align: center;
     font-size: 50px ;
@@ -261,6 +304,7 @@ i.fa-solid.fa-circle-check {
 .data span {
     margin: 6px;
 }
+/*////////////////////////////////////////////////////PARTNERS////////////////////////////////////////////////////*/
 .partners img {
     width: 60px;
     height: 60px;
@@ -276,6 +320,7 @@ i.fa-solid.fa-circle-check {
 .partners img {
     border-radius: 10px;
 }
+/*////////////////////////////////////////////////////SUBSCRIPTION////////////////////////////////////////////////////*/
 .subscription_fondo {
     background: url(../imagenes/fondoPartner.jpg);
     background-size: contain;
