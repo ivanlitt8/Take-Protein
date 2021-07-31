@@ -1,5 +1,4 @@
 /*////////////////////////////////////////////////////HEADER////////////////////////////////////////////////////*/
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 *{
     margin: 0px;
@@ -27,6 +26,9 @@ header{
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 1px;
+}
+a.nav__logo {
+    color: whitesmoke;
 }
 .nav__ul{
     position: relative;
@@ -71,6 +73,56 @@ header{
 }
 .content__catalog:hover{
     background: #045e88;
+}
+@media screen and (max-width: 990px){
+    .sectionAbout{
+        padding: 0px;
+        background-size: cover;
+        background-position: center;
+    }
+    .content__container h2{
+        font-size: 2.5em;
+    }
+    .content__container p{
+        font-size: 1em;
+    }
+    .nav__ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 100;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav__ul.active{
+        display: flex;
+    }
+    .nav__ul li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .nav__slider{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 200;
+    }
+    .nav__slider.active{
+        background: url(close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
 }
 /*////////////////////////////////////////////////////FLYER////////////////////////////////////////////////////*/
 .flyer1{
@@ -118,10 +170,6 @@ span.take{
     text-transform: uppercase;
 }
 /*////////////////////////////////////////////////////BUTTONS////////////////////////////////////////////////////*/
-.botons{
-    display: flex;
-    justify-content: center;
-}
 .botons_tittle{
     background-color: #41b3f9;
     padding: 5px 20px;
@@ -131,7 +179,6 @@ span.take{
 section div button{
     width: 350px;
     margin: 0px 20px;
-    display: inline-block;
     height: 200px;
     border-radius: 26px;
     font-family: Roboto, sans-serif;
@@ -153,6 +200,7 @@ section div button{
 .botons_fondo3{
     background: url(imagenes/People1.jpg);
     background-size: cover;
+    border: none;
     border: 1px #707070;
 }
 /*////////////////////////////////////////////////////SIDEBAR////////////////////////////////////////////////////*/
@@ -212,10 +260,6 @@ section div button{
     margin-bottom: 0px;
     color: #bbb2b2;
 }
-.sectionProduct{
-    display: flex;
-    justify-content: center;
-}
 .product{
     background-color: white;
     border-radius: 20px;
@@ -234,6 +278,7 @@ section div button{
     width: 100%;
     height: 110px;
     bottom: 0px;
+    right: 0px;
 }
 .product_price{
     position: absolute;
@@ -263,10 +308,16 @@ i.fa-solid.fa-circle-check {
 }
 .product {
     width: 260px;
+    cursor: pointer;
 }
 .product_fondo-foto {
     width: 220px;
     height: auto;
+    transition: 0.5s;
+}
+.product_fondo-foto:hover {
+    opacity: 0.3;
+    transform: scale(1.1, 1.1);
 }
 .product_logo{
     background-color: black;
@@ -305,6 +356,11 @@ i.fa-solid.fa-circle-check {
     margin: 6px;
 }
 /*////////////////////////////////////////////////////PARTNERS////////////////////////////////////////////////////*/
+section.partners {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
 .partners img {
     width: 60px;
     height: 60px;
@@ -320,11 +376,20 @@ i.fa-solid.fa-circle-check {
 .partners img {
     border-radius: 10px;
 }
+@media screen and (max-width: 800px){
+    .partners img{
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 0.5rem 0.5rem;
+    }
+}
 /*////////////////////////////////////////////////////SUBSCRIPTION////////////////////////////////////////////////////*/
 .subscription_fondo {
     background: url(../imagenes/fondoPartner.jpg);
     background-size: contain;
-    height: 100px;
+    height: 18vh;
+    width: 100vw;
+    margin-top: 50px;
 }
 .subscription_content{
     position: absolute;
@@ -336,12 +401,12 @@ i.fa-solid.fa-circle-check {
     justify-content: space-between;
 }
 .subscription_content h4 {
-    margin: 23px;
+    margin: auto 23px;
     font-size: 18px;
     font-weight: 400;
 }
 .subscription_content div {
-    margin: 18px 50px;
+    margin: auto 30px;
     font-weight: 600;
     font-size: 13px;
     background: white;
@@ -349,68 +414,37 @@ i.fa-solid.fa-circle-check {
     width: 120px;
     height: 35px;
     text-align: center;
+    cursor: pointer;
+}
+.subscription_content div:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
 }
 .subscription_content h3 {
-    position: relative;
-    top: 7px;  
-    font-weight: 500;
+    font-size: 16px;
+    margin: 6px;
 }
 .textos {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     color: #878484;
     text-transform: uppercase;
     margin: 30px;
 }
-@media screen and (max-width: 990px){
-    .sectionAbout{
-        padding: 0px;
-        background-size: cover;
-        background-position: center;
+@media screen and (max-width: 800px){
+    .subscription_content{
+        height: 12vh;
+        width: 80vw;
     }
-    .content__container h2{
-        font-size: 2.5em;
+    .subscription_content {
+        margin: 15px 50px;
     }
-    .content__container p{
-        font-size: 1em;
+    .subscription_content h4{
+        font-size: 1rem;
     }
-    .nav__ul{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #000;
-        z-index: 100;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .nav__ul.active{
-        display: flex;
-    }
-    .nav__ul li a{
-        font-size: 24px;
-        margin: 10px 0;
-    }
-    .nav__slider{
-        position: relative;
-        width: 30px;
-        height: 30px;
-        background: url(menu.png);
-        background-position: center;
-        background-size: 30px;
-        background-repeat: no-repeat;
-        cursor: pointer;
-        z-index: 200;
-    }
-    .nav__slider.active{
-        background: url(close.png);
-        background-position: center;
-        background-size: 25px;
-        background-repeat: no-repeat;
+    .textos span{
+        font-size: 0.7rem;
     }
 }
 /*////////////////////////////////////////////////////FOOTER////////////////////////////////////////////////////*/

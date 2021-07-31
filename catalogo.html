@@ -4,9 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Take Protein</title>
+	<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!--Icons-->
 	<script src="https://kit.fontawesome.com/56bb6296bc.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="nuevoStyle.css">
 	<link rel="icon" href="imagenes/favicon.ico">
+	<!--CSS-->
+	<link rel="stylesheet" href="nuevoStyle.css">
 	<!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!--Slider-->
@@ -47,84 +52,105 @@
 	</div>
 	<!------------BUTTONS------------->
 	<section class="botons">
-		<div>
-			<button class="botons_fondo1"><span class="botons_tittle">accesorios</span></button>
-		</div>
-		<div>
-			<button class="botons_fondo2"><span class="botons_tittle">indumentaria</span></button>
-		</div>
-		<div>
-			<button class="botons_fondo3"><span class="botons_tittle">suplementos</span></button>
-		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<button class="botons_fondo1"><span class="botons_tittle">accesorios</span></button>
+				</div>
+				<div class="col-lg-4">
+					<button class="botons_fondo2"><span class="botons_tittle">indumentaria</span></button>
+				</div>
+				<div class="col-lg-4">
+					<button class="botons_fondo3"><span class="botons_tittle">suplementos</span></button>
+				</div>
+			</div>
+		</div>					
 	</section>
-		<!------------PRODUCTS------------->
-		<h1 class="tittleProd">nuevos productos</h1>
-	<section class="sectionProduct">
-		<div class="product">
-			<div class="product_fondo">
-				<img class="product_fondo-foto" src="imagenes/EnaProtein3.jpg" alt="">
-			</div>
-			<div class="product_data">
-				<h3>Star Nutrition Whey Protein  <i class="fa-solid fa-circle-check"></i></h3>
-				<div class="data">
-					<span>proteina 25g</span>
-					<span>carbs 4.3g</span>
-					<span>grasa 1.5gr</span>
+	<!------------PRODUCTS------------->
+	<div class="container-sm">
+		<div class="row">
+			<h4 class="tittleProd">nuevos productos</h4>
+			<div class="col-sm-12">
+				<div class="product-grid">
+					<div class="row">
+						<div class="product">
+							<div class="product_fondo">
+								<img class="product_fondo-foto" src="imagenes/MarvickProtein.jpg" alt="">
+							</div>
+							<div class="product_data">
+								<h3>Mervick Lab Whey Protein <i class="fa-solid fa-circle-check"></i></h3>
+								<div class="data">
+									<span>proteina 25g</span>
+									<span>carbs 4.3g</span>
+									<span>grasa 1.5gr</span>
+								</div>
+							</div>
+							<div class="product_price">
+								<h2 class="product_price-price">$2350</h2>
+							</div>
+							<div class="product_logo">
+								<img class="logo" src="imagenes/mervickLogo.png" alt="">
+							</div>
+						</div>
+						<div class="product">
+							<div class="product_fondo">
+								<img class="product_fondo-foto" src="imagenes/BarraEnergetica1.png" alt="">
+							</div>
+							<div class="product_data">
+								<h3>ENA Protein Bar x4 <i class="fa-solid fa-circle-check"></i></h3>
+								<div class="data">
+									<span>proteina 25g</span>
+									<span>carbs 4.3g</span>
+									<span>grasa 1.5gr</span>
+								</div>
+							</div>
+							<div class="product_price">
+								<h2 class="product_price-price">$520</h2></div>
+							<div class="product_logo">
+								<img class="logo" src="imagenes/EnaLogo.png" alt="">
+							</div>
+						</div>
+						<div class="product">
+							<div class="product_fondo">
+								<img class="product_fondo-foto" src="imagenes/creatinaStar.png" alt="">
+							</div>
+							<div class="product_data">
+								<h3>Star Nutrition Creatina Monohidrato <i class="fa-solid fa-circle-check"></i></h3>
+								<div class="data">
+									<span>proteina 25g</span>
+									<span>carbs 4.3g</span>
+									<span>grasa 1.5gr</span>
+								</div>
+							</div>
+							<div class="product_price">
+								<h2 class="product_price-price">$740</h2></div>
+							<div class="product_logo">
+								<img class="logo" src="imagenes/StarNutProteinLogo.jpg" alt="">
+							</div>
+						</div>
+						<div class="product">
+							<div class="product_fondo">
+								<img class="product_fondo-foto" src="imagenes/enaRippedMax.jpg" alt="">
+							</div>
+							<div class="product_data">
+								<h3>ENA Ripped Max <i class="fa-solid fa-circle-check"></i></h3>
+								<div class="data">
+									<span>proteina 25g</span>
+									<span>carbs 4.3g</span>
+									<span>grasa 1.5gr</span>
+								</div>
+							</div>
+							<div class="product_price">
+								<h2 class="product_price-price">$890</h2></div>
+							<div class="product_logo">
+								<img class="logo" src="imagenes/EnaLogo.png" alt="">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="product_price"><h2 class="product_price-price">$1.740</h2></div>
-			<div class="product_logo"><img class="logo" src="imagenes/EnaLogo.png" alt="">
-			</div>
 		</div>
-		<div class="product">
-			<div class="product_fondo">
-				<img class="product_fondo-foto" src="imagenes/EnaProtein3.jpg" alt="">
-			</div>
-			<div class="product_data">
-				<h3>Star Nutrition Whey Protein  <i class="fa-solid fa-circle-check"></i></h3>
-				<div class="data">
-					<span>proteina 25g</span>
-					<span>carbs 4.3g</span>
-					<span>grasa 1.5gr</span>
-				</div>
-			</div>
-			<div class="product_price"><h2 class="product_price-price">$1.740</h2></div>
-			<div class="product_logo"><img class="logo" src="imagenes/EnaLogo.png" alt="">
-			</div>
-		</div>
-		<div class="product">
-			<div class="product_fondo">
-				<img class="product_fondo-foto" src="imagenes/EnaProtein3.jpg" alt="">
-			</div>
-			<div class="product_data">
-				<h3>Star Nutrition Whey Protein  <i class="fa-solid fa-circle-check"></i></h3>
-				<div class="data">
-					<span>proteina 25g</span>
-					<span>carbs 4.3g</span>
-					<span>grasa 1.5gr</span>
-				</div>
-			</div>
-			<div class="product_price"><h2 class="product_price-price">$1.740</h2></div>
-			<div class="product_logo"><img class="logo" src="imagenes/EnaLogo.png" alt="">
-			</div>
-		</div>
-		<div class="product">
-			<div class="product_fondo">
-				<img class="product_fondo-foto" src="imagenes/EnaProtein3.jpg" alt="">
-			</div>
-			<div class="product_data">
-				<h3>Star Nutrition Whey Protein  <i class="fa-solid fa-circle-check"></i></h3>
-				<div class="data">
-					<span>proteina 25g</span>
-					<span>carbs 4.3g</span>
-					<span>grasa 1.5gr</span>
-				</div>
-			</div>
-			<div class="product_price"><h2 class="product_price-price">$1.740</h2></div>
-			<div class="product_logo"><img class="logo" src="imagenes/EnaLogo.png" alt="">
-			</div>
-		</div>
-	</section>
+	</div>
 	<!------------PARTNERS------------->
 	<section class="partners">
 		<div>
@@ -167,10 +193,10 @@
 	<!------------SUBSCRIPTION------------->
 	<section>
 		<div class="subscription_fondo">
-		<div class="subscription_content">
-			<h4>Recibi ofertas y descuentos en tu mail</h4>
-			<div><h3>Suscribite</h3></div>
-		</div>
+			<div class="subscription_content">
+				<h4>Recibi ofertas y descuentos en tu mail</h4>
+				<div><h3>Suscribite</h3></div>
+			</div>
 		</div>
 	</section>
 	<!------------TEXT------------->
@@ -267,8 +293,8 @@
 			<div class="footer"></div>
 				<div class="copyright">
 					©2020 Todos los Derechos Reservados -
-					<a class="copyright__link" href="https://www.buenosaires.gob.ar/educacion/codo-codo" target="_blank">
-						CodoACodo <i class="fas fa-code" aria-hidden="true"></i>
+					<a class="copyright__link" target="_blank">
+						TakeProtein <i class="fas fa-code" aria-hidden="true"></i>
 					</a>
 				</div>
 			</div>
