@@ -170,34 +170,41 @@ span.take{
     text-transform: uppercase;
 }
 /*////////////////////////////////////////////////////BUTTONS////////////////////////////////////////////////////*/
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
 .botons_tittle{
     background-color: #41b3f9;
     padding: 5px 20px;
     color: #7a6d6d;
     font-weight: 700;
-}
-section div button{
-    width: 350px;
-    margin: 0px 20px;
-    height: 200px;
-    border-radius: 26px;
-    font-family: Roboto, sans-serif;
     text-transform: uppercase;
-    font-size: 20px;
+    font-family: Roboto, sans-serif;
 }
-.botons_fondo1{
+.botons {
+    width: 30vw;
+    height: 30vh;
+    border-radius: 26px;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+#bt1{
     background: url(imagenes/People7.jpg);
     background-size: cover;
     border: none;
     border: 1px #707070;
 }
-.botons_fondo2{
+#bt2{
     background: url(imagenes/fitPeople.jpg);
     background-size: cover;
     border: none;
     border: 1px #707070;
 }
-.botons_fondo3{
+#bt3{
     background: url(imagenes/People1.jpg);
     background-size: cover;
     border: none;
@@ -250,6 +257,11 @@ section div button{
     color: white;
 }
 /*////////////////////////////////////////////////////PRODUCTS////////////////////////////////////////////////////*/
+.container-products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}
 .tittleProd{
     text-align: center;
     font-size: 50px ;
@@ -354,6 +366,32 @@ i.fa-solid.fa-circle-check {
 }
 .data span {
     margin: 6px;
+}
+@media screen and (max-width: 1200px){
+    #borrar{
+        display: none;
+    }
+}
+@media screen and (min-width: 580)and(max-width: 800px){
+    #borrar{
+        display: grid;
+    }
+    .container-products{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 50%;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+}
+@media screen and (max-width: 580px){
+    #borrar{
+        display: grid;
+    }
+    .container-products{
+        display: grid;
+        grid-template-columns: 60%;
+    }
 }
 /*////////////////////////////////////////////////////PARTNERS////////////////////////////////////////////////////*/
 section.partners {
@@ -558,4 +596,4 @@ footer{
         margin-top: 30px;
     }
 }
-/*//////////////////////////////////////////////////NUEVO-CATALOG/////////////////////////////////////////////////*
+/*//////////////////////////////////////////////////NUEVO-CATALOG/////////////////////////////////////////////////*/
