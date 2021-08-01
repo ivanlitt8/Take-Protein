@@ -216,11 +216,23 @@ span.take{
         height: 20vh;
     }
 }
-/*////////////////////////////////////////////////////SIDEBAR////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////SIDEBAR Y CATALOGO ////////////////////////////////////////////////////*/
+.container-grid{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    justify-items: center;
+    justify-content: center;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: -20px;
+}
 .ubication{
     color: white;
     font-size: 0.8em;
-    margin-top: 10px;  
+    margin-top: 10px;
+    padding-left: 50px; 
 }
 .categoria-contentent{
     background-color: white;
@@ -244,16 +256,16 @@ span.take{
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.product-grid .row {
-    margin-top: 50px;
-}
-.product-grid h2{
+.col2 h2{
     font-size: 14px;
     font-weight: 500;
     color: white;
 }
 .selector{
+    position: relative;
     float: right;
+    bottom: 20px;
+    margin-right: 30px;
 }
 .selector h4, select{
     display: inline;
@@ -262,7 +274,38 @@ span.take{
 .selector h4{
     color: white;
 }
-/*////////////////////////////////////////////////////PRODUCTS////////////////////////////////////////////////////*/
+@media screen and (max-width: 1160px){
+    .container-grid{
+        display: grid;
+        grid-template-columns: 70%;
+        justify-items: center;
+        justify-content: center;
+    }
+    .col1{
+        display: none;
+    }
+    .menu-colapse{
+        width: 85%;
+        height: 30px;
+        background-color:#d4d4d4;
+        border-radius: 4px;
+        border: inset 2px;
+        text-align: center;
+        margin: 40px auto;
+    }
+    .menu-colapse:hover {
+        background-color: white;
+        transition: 0.8s;
+        cursor: pointer;  
+    }
+}
+@media screen and (max-width: 900px){
+    .product-grid{
+        grid-template-columns: auto auto ;
+    }
+}
+/*////////////////////////////////////////////////////PRODUCTOS////////////////////////////////////////////////////*/
+
 .grid-container-products{
     display: grid;
     grid-template-columns: auto auto auto auto;
