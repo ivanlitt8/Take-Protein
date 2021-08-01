@@ -195,20 +195,25 @@ span.take{
 #bt1{
     background: url(imagenes/People7.jpg);
     background-size: cover;
-    border: none;
-    border: 1px #707070;
 }
 #bt2{
     background: url(imagenes/fitPeople.jpg);
     background-size: cover;
-    border: none;
-    border: 1px #707070;
 }
 #bt3{
     background: url(imagenes/People1.jpg);
     background-size: cover;
-    border: none;
-    border: 1px #707070;
+}
+
+@media screen and (max-width: 730px){
+    .grid-container{
+        grid-template-columns: auto;
+        grid-template-rows: 40% 40% 40%;
+    }
+    .botons {
+        width: 80vw;
+        height: 20vh;
+    }
 }
 /*////////////////////////////////////////////////////SIDEBAR////////////////////////////////////////////////////*/
 .ubication{
