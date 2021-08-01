@@ -263,7 +263,7 @@ span.take{
     color: white;
 }
 /*////////////////////////////////////////////////////PRODUCTS////////////////////////////////////////////////////*/
-.container-products{
+.grid-container-products{
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
@@ -382,7 +382,7 @@ i.fa-solid.fa-circle-check {
     #borrar{
         display: grid;
     }
-    .container-products{
+    .grid-container-products{
         display: grid;
         grid-template-columns: 45% 45%;
         grid-template-rows: 50%;
@@ -394,9 +394,10 @@ i.fa-solid.fa-circle-check {
     #borrar{
         display: grid;
     }
-    .container-products{
+    .grid-container-products{
         display: grid;
         grid-template-columns: 60%;
+        justify-items: center;
     }
 }
 /*////////////////////////////////////////////////////PARTNERS////////////////////////////////////////////////////*/
