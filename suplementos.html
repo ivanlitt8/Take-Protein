@@ -11,6 +11,7 @@
 	<script src="https://kit.fontawesome.com/56bb6296bc.js" crossorigin="anonymous"></script>
 	<link rel="icon" href="imagenes/favicon.ico">
 	<!--CSS-->
+	<link rel="stylesheet" href="Style/pushbar.css">
 	<link rel="stylesheet" href="nuevoStyle.css">
 	<!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -47,7 +48,7 @@
 	<div class="container-grid">
 		<div class="col1">
 			<div class="categoria">productos<hr></div>
-			<div class="categoria-contentent">
+			<div class="categoria-content">
 				<h4> &#x2022 Proteinas</h4>
 				<h4> &#x2022 Creatina</h4>
 				<h4> &#x2022 Quemadores</h4>
@@ -73,7 +74,7 @@
 					<option value="3">Nombre</option>
 				</select>
 			</span>
-			<div class="menu-colapse">Filtrar</div>
+			<div class="menu-colapse" data-pushbar-target="filter">Filtrar</div>
 			<div class="product-grid">
 				<div class="product">
 					<div class="product_fondo">
@@ -188,6 +189,26 @@
 			</div>
 		</div>
 	</div>
+	<div data-pushbar-id="filter" data-pushbar-direction="left" >
+		<div class="close">
+			<div data-pushbar-close><i class="fa-solid fa-xmark"></i></div>
+		</div>
+		<div class=filter_menu> 
+			<a> &#x2022 Proteinas</a>
+			<a> &#x2022 Creatina</a>
+			<a> &#x2022 Quemadores</a>
+			<a> &#x2022 Aminoacidos</a>
+			<a> &#x2022 Pre-entreno</a>
+			<a> &#x2022 Post-entreno</a>
+			<a> &#x2022 Ganadores de masa</a>
+			<a> &#x2022 Glutamina</a>
+			<a> &#x2022 Vitaminas y minerales</a>
+			<a> &#x2022 Oxido nitrico</a>
+			<a> &#x2022 Hormonas</a>
+			<a> &#x2022 Arginina</a>
+			<a> &#x2022 Shakers</a>
+		</div>
+	</div>
 	<!------------SUBSCRIPTION------------->
 	<section>
 		<div class="subscription_fondo">
@@ -203,13 +224,20 @@
 		<span>tu compra protegida con <b>mercadopago</b></span>
 		<span>podes pagar en <u><b>3, 6, o 12 cuotas</b></u></span>
 	</div>
-	<script type="text/javascript">
+    <script>
 		function nav__slider(){
 			const nav__slider = document.querySelector('.nav__slider');
 			const nav__ul = document.querySelector('.nav__ul');
 			nav__slider.classList.toggle('active');
 			nav__ul.classList.toggle('active');
 			}
+	</script>
+	<script src="js/pushbar.js"></script>
+	<script type="text/javascript">
+		var pushbar = new Pushbar({
+			blur: true,
+			overlay: true
+		});
 	</script>
 	<footer>
 		<div class="containerAll">

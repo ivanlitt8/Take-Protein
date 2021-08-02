@@ -234,15 +234,20 @@ span.take{
     margin-top: 10px;
     padding-left: 50px; 
 }
-.categoria-contentent{
+.categoria-content{
     background-color: white;
     margin: 10px;
     padding: 20px;
     height: 800px
 }
-.categoria-contentent h4 {
+.categoria-content h4 {
     font-size: 14px;
     line-height: 50px;
+}
+.categoria-content h4:hover {
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;  
 }
 .categoria{
     color: white;
@@ -274,6 +279,28 @@ span.take{
 .selector h4{
     color: white;
 }
+.close {
+    float: right;
+    font-size: 30px;
+    margin: 10px;
+}
+.opened {
+    background-color: w;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+}
+.filter_menu {
+    display: grid;
+    text-align: left;
+    line-height: 45px;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+.filter_menu a:hover {
+    font-weight: 700;
+    transition: 0.2s;
+}
 @media screen and (max-width: 1160px){
     .container-grid{
         display: grid;
@@ -283,6 +310,9 @@ span.take{
     }
     .col1{
         display: none;
+        position: absolute;
+        z-index: 100;
+        width: 250px;
     }
     .menu-colapse{
         width: 85%;
@@ -292,11 +322,6 @@ span.take{
         border: inset 2px;
         text-align: center;
         margin: 40px auto;
-    }
-    .menu-colapse:hover {
-        background-color: white;
-        transition: 0.8s;
-        cursor: pointer;  
     }
 }
 @media screen and (max-width: 900px){
@@ -474,7 +499,7 @@ section.partners {
 /*////////////////////////////////////////////////////SUBSCRIPTION////////////////////////////////////////////////////*/
 .subscription_fondo {
     background: url(../imagenes/fondoPartner.jpg);
-    background-size: contain;
+    background-size: cover;
     height: 18vh;
     width: 100vw;
     margin-top: 50px;
