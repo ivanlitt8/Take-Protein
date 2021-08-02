@@ -176,6 +176,9 @@ span.take{
     justify-content: space-evenly;
     margin-bottom: 100px;
 }
+.grid-container a {
+    text-decoration: none;
+}
 .botons_tittle{
     background-color: #41b3f9;
     padding: 5px 20px;
@@ -498,8 +501,8 @@ section.partners {
 }
 /*////////////////////////////////////////////////////SUBSCRIPTION////////////////////////////////////////////////////*/
 .subscription_fondo {
-    background: url(../imagenes/fondoPartner.jpg);
-    background-size: cover;
+    background: url(imagenes/fondoPartner.jpg);
+    background-size: auto;
     height: 18vh;
     width: 100vw;
     margin-top: 50px;
@@ -671,4 +674,4 @@ footer{
         margin-top: 30px;
     }
 }
-/*//////////////////////////////////////////////////NUEVO-CATALOG/////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////INDIVIDUAL/////////////////////////////////////////////////*/

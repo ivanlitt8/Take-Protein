@@ -4,9 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Take Protein</title>
+	<!--Icons-->
 	<script src="https://kit.fontawesome.com/56bb6296bc.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="nuevoStyle.css">
 	<link rel="icon" href="imagenes/favicon.ico">
+	<!--CSS-->
+	<link rel="stylesheet" href="nuevoStyle.css">
 	<!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!--Slider-->
@@ -23,7 +25,6 @@
 			<ul class="nav__ul">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
-				<li><a href="sing up.html">Registrate</a></li>
 				<li><a href="contacto.html">Contacto</a></li>
 			</ul>
 		</header>
@@ -38,87 +39,48 @@
 		</div>
 	</div>
 	<!------------PRODUCTS------------->
-		<h1 class="tittleProd">nuevos productos</h1>
-	<section class="sectionProduct">
-		<div class="product">
-			<div class="product_fondo">
-				<img class="product_fondo-foto" src="imagenes/EnaProtein3.jpg" alt="">
+	<div class="card">
+		<div class="col1">
+			<img src="imagenes/EnaProtein3.jpg">
+		</div>
+		<div class="col2">
+			<div class="card_logo">
+				<img src="imagenes/EnaLogo.png" alt="">
 			</div>
-			<div class="product_data">
-				<h3>Star Nutrition Whey Protein  <i class="fa-solid fa-circle-check"></i></h3>
-				<div class="data">
-					<span>proteina 25g</span>
-					<span>carbs 4.3g</span>
-					<span>grasa 1.5gr</span>
-				</div>
+			<div class="card_titulo">
+				<h2>ENA Whey Protein <i class="fa-solid fa-circle-check"></i></h2>
 			</div>
-			<div class="product_price"><h2 class="product_price-price">$1.740</h2></div>
-			<div class="product_logo"><img class="logo" src="imagenes/EnaLogo.png" alt="">
+			<div class="card_precio">
+				<h3>$2.800,00</h3>
+			</div>
+			<div class="card_info">
+				<p>
+					ENA Whey Protein® es la proteína más avanzada del mercado,
+					mantiene los niveles altos de proteínas en el cuerpo por más 
+					tiempo que una proteína regular. Gracias a su exclusiva
+					Multi-Phase Protein Blend, combina las proteínas más vendidas
+					del mundo en un solo suplemento: - Concentrado - Aislado -
+					Caseína - Aminoácidos Libres.
+				</p>
+			</div>
+			<div class="card_envio">
+				<span><h2>Envio gratis</h2><i class="fa-solid fa-truck-fast"></i></span>
+			</div>
+			<div class="card_sabor">
+				<h4>Sabor </h4>
+				<select name=card_sabor_select">
+					<option value="1">Chocolate</option> 
+					<option value="2">Vainilla</option> 
+					<option value="3">Cookies</option>
+				</span>
+			</div>
+			<div class="card_cantidad">
+				<h2>Cantidad:</h2><input type="text" size="2" maxlength="2" value="cantidad" name="cantidad">
+			</div>
+			<div class="card_btn">
+				<h2>agregar al carrito</h2>
 			</div>
 		</div>
-		<div class="product">
-			<div class="product_fondo">
-				<img class="product_fondo-foto" src="imagenes/EnaProtein3.jpg" alt="">
-			</div>
-			<div class="product_data">
-				<h3>Star Nutrition Whey Protein  <i class="fa-solid fa-circle-check"></i></h3>
-				<div class="data">
-					<span>proteina 25g</span>
-					<span>carbs 4.3g</span>
-					<span>grasa 1.5gr</span>
-				</div>
-			</div>
-			<div class="product_price"><h2 class="product_price-price">$1.740</h2></div>
-			<div class="product_logo"><img class="logo" src="imagenes/EnaLogo.png" alt="">
-			</div>
-		</div>
-		<div class="product">
-			<div class="product_fondo">
-				<img class="product_fondo-foto" src="imagenes/EnaProtein3.jpg" alt="">
-			</div>
-			<div class="product_data">
-				<h3>Star Nutrition Whey Protein  <i class="fa-solid fa-circle-check"></i></h3>
-				<div class="data">
-					<span>proteina 25g</span>
-					<span>carbs 4.3g</span>
-					<span>grasa 1.5gr</span>
-				</div>
-			</div>
-			<div class="product_price"><h2 class="product_price-price">$1.740</h2></div>
-			<div class="product_logo"><img class="logo" src="imagenes/EnaLogo.png" alt="">
-			</div>
-		</div>
-		<div class="product">
-			<div class="product_fondo">
-				<img class="product_fondo-foto" src="imagenes/EnaProtein3.jpg" alt="">
-			</div>
-			<div class="product_data">
-				<h3>Star Nutrition Whey Protein  <i class="fa-solid fa-circle-check"></i></h3>
-				<div class="data">
-					<span>proteina 25g</span>
-					<span>carbs 4.3g</span>
-					<span>grasa 1.5gr</span>
-				</div>
-			</div>
-			<div class="product_price"><h2 class="product_price-price">$1.740</h2></div>
-			<div class="product_logo"><img class="logo" src="imagenes/EnaLogo.png" alt="">
-			</div>
-		</div>
-	</section>
-	<!------------SUBSCRIPTION------------->
-	<section>
-		<div class="subscription_fondo">
-		<div class="subscription_content">
-			<h4>Recibi ofertas y descuentos en tu mail</h4>
-			<div><h3>Suscribite</h3></div>
-		</div>
-		</div>
-	</section>
-	<!------------TEXT------------->
-	<div class="textos">
-		<span>envios gratis a partir de <u></b>$1500</b></u></span>
-		<span>tu compra protegida con <b>mercadopago</b></span>
-		<span>podes pagar en <u><b>3, 6, o 12 cuotas</b></u></span>
 	</div>
 	<script type="text/javascript">
 		function nav__slider(){
