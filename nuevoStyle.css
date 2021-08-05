@@ -684,7 +684,8 @@ footer{
     margin-top: 30px;
     border-radius: 40px;
     background-color: white;
-    height: 450px;
+    position: relative;
+    height: auto;
 }
 .card_logo img{
     position: absolute;
@@ -693,10 +694,10 @@ footer{
     left: -35px;
     border-radius: 50px;
 }
-.col1 img {
-    max-width: 30vw;
+.card_col1 img {
+    width: 30vw;
 }
-.col1 {
+.card_col1 {
     display: grid;
     place-items: center;
 }
@@ -712,18 +713,18 @@ footer{
 }
 .nombreYprecio h2{
     margin-top: 50px;
-    font-size: 35px;
+    font-size: 30px;
     color: black;
 }
 .nombreYprecio h3{
-    font-size: 30px;
+    font-size: 25px;
     line-height: 20px;
 }
 .card_info p {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .card_info {
-    width: 35em;
+    width: 40vw;
 }
 .card_envio {
     font-size: 25px;
@@ -806,7 +807,6 @@ footer{
     font-size: 1em;
     margin: 5px;
 }
-
 .productosRelacionados-envio {
     color: #47b764;
     font-size: 16px;
@@ -823,4 +823,13 @@ footer{
     color: white;
     float: right;
     margin-right: 20px;
+}
+@media screen and (max-width: 1300px){
+    .productosRelacionados {
+    display: grid;
+    grid-template-columns: 100%;
+    }
+    .productosRelacionados_{
+    margin: 20px;
+    }
 }
