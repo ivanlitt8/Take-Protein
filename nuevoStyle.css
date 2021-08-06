@@ -503,7 +503,7 @@ section.partners {
 .subscription_fondo {
     background: url(imagenes/fondoPartner.jpg);
     background-size: auto;
-    height: 18vh;
+    height: 120px;
     width: 100vw;
     margin-top: 50px;
 }
@@ -557,7 +557,7 @@ section.partners {
         margin: 15px 50px;
     }
     .subscription_content h4{
-        font-size: 1rem;
+        font-size: 15px;
     }
     .textos span{
         font-size: 0.7rem;
@@ -800,14 +800,14 @@ footer{
     font-family: sans-serif;
     color: #bbb2b2;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .productosRelacionados {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     place-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 .productosRelacionados_ {
     display: grid;
@@ -855,7 +855,7 @@ footer{
     .card{
     display: grid;
     grid-template-columns: 100%;
-    width: 80%;
+    width: 90%;
     }
     .col2_contenedor {
     display: flex;
@@ -888,8 +888,7 @@ footer{
     display: none;
     }
     .card_col1 img {
-    min-height: 300px;
-    min-width: 300px;
+    min-width: 260px;
     }
     .seleccionables_contenedor{
     font-size: 13px;
