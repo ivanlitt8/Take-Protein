@@ -696,6 +696,7 @@ footer{
 }
 .card_col1 img {
     width: 30vw;
+    border-radius: 40px;
 }
 .card_col1 {
     display: grid;
@@ -709,25 +710,26 @@ footer{
     border-top-right-radius: 40px;
     display: grid;
     grid-template-rows: 30% 40% 30%;
-    padding-left: 80px;
+    padding-left: 5vw;
 }
 .nombreYprecio h2{
-    margin-top: 50px;
-    font-size: 30px;
     color: black;
+    font-size: 2.5vw;
+    margin-top: 20px;
 }
 .nombreYprecio h3{
-    font-size: 25px;
+    font-size: 2vw;
     line-height: 20px;
 }
 .card_info p {
-    font-size: 1em;
+    font-size: 1.3vw;
+    width: 85%;
 }
 .card_info {
     width: 40vw;
 }
-.card_envio {
-    font-size: 25px;
+.card_envio h5 {
+    font-size: 1.8vw;
     font-weight: bold;
     color: #47b764;
     margin: 10px;
@@ -735,6 +737,7 @@ footer{
 .seleccionables_contenedor {
     display: grid;
     grid-template-columns: 50% 50%;
+    font-size: 1.2vw;
 }
 .card_btn {
     text-transform: uppercase;
@@ -744,23 +747,25 @@ footer{
     color: white;
     font-weight: bold;
     float: right;
-    margin-right: 70px;
-    margin-top: 20px;
     border-style: none;
+    font-size: 1.2vw;
+    height: 3vw;
 }
 .bt1{
     background-color: #2a90b7;
-    width: 200px;
+    width: 15vw;
 }
 .bt2{
     background-color: #019247;
-    width: 100px;
+    width: 10vw;
 }
 .bt2:hover{
     background-color: #096133;
+    cursor: pointer;
 }
 .bt1:hover{
     background-color: #085b7b;
+    cursor: pointer;
 }
 .card_sabor {
     display: flex;
@@ -771,14 +776,32 @@ footer{
 .seleccionables {
     margin-top: 30px;
 }
+.card_sabor select{
+    font-size: 1vw;
+}
+.card_cantidad input{
+    font-size: 1vw;
+}
 .seleccionables_contenedor h4 {
     margin-right: 10px;
+}
+.seleccionables_bottons{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items:center;
+    margin: 20px;
 }
 .card_cantidad input {
     width: 30px;
 }
 
 /*//////////////////////////////////////////////////RELATED PRODUCTS/////////////////////////////////////////////////*/
+.tittleProductosRelacionados {
+    font-family: sans-serif;
+    color: #bbb2b2;
+    text-align: center;
+    margin-top: 20px;
+}
 .productosRelacionados {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -824,6 +847,68 @@ footer{
     float: right;
     margin-right: 20px;
 }
+@media screen and (max-width:850px){
+    .containerVistaDetallada {
+    display: grid;
+    place-items: center;
+    }
+    .card{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 80%;
+    }
+    .col2_contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 0px ;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    }
+    .card_info {
+    width: 100%;
+    }
+    .card_info p {
+    font-size: 2vw;
+    width: 95%;
+    }
+    .card_envio h5{
+    font-size: 3.5vw;
+    }
+    .seleccionables{
+    margin: 0px;
+    }
+    .card_titulo h2 {
+    font-size: 4vw;
+    }
+    .card_precio h3 {
+    font-size: 3vw;
+    }
+    .card_logo img {
+    display: none;
+    }
+    .card_col1 img {
+    min-height: 300px;
+    min-width: 300px;
+    }
+    .seleccionables_contenedor{
+    font-size: 13px;
+    justify-items: center;  
+    }
+    .seleccionables_contenedor select, input{
+    font-size: 9px;
+    }
+    .card_btn.bt2 {
+    width: 15vw;
+    height: 5vw;
+    font-size: 1.7vw;
+    }
+    .card_btn.bt1 {
+    width: 22vw;
+    height: 5vw;
+    font-size: 1.7vw;
+    }
+}  
 @media screen and (max-width: 1300px){
     .productosRelacionados {
     display: grid;
