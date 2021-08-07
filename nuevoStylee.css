@@ -13,14 +13,11 @@ body {
 .sectionIndex{
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    background: url(bgrn.jpg);
-    background-size: cover;
     background-position: center;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 100px;
+    padding: 45px;
 }
 header{
     position: absolute;
@@ -88,8 +85,6 @@ header{
 @media screen and (max-width: 990px){
     .sectionIndex{
         padding: 40px;
-        background: url(bgrn.jpg);
-        background-size: cover;
         background-position: center;
     }
     .sectionIndex__header{
