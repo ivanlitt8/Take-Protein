@@ -558,7 +558,7 @@ i.fa-solid.fa-circle-check {
         column-gap: 10px;
     }
 }
-@media screen and (max-width: 580px){
+@media screen and (max-width: 600px){
     #borrar{
         display: grid;
     }
@@ -566,6 +566,22 @@ i.fa-solid.fa-circle-check {
         display: grid;
         grid-template-columns: 60%;
         justify-items: center;
+    }
+    .product {
+        width: 200px;
+    }
+    .product_fondo-foto {
+        width: 200px;
+    }
+    .product_fondo {
+        left: 0px;
+    }
+    .product_fondo-foto:hover {
+        opacity: 0.3;
+        transform: scale(1, 1);
+    }
+    .data {
+        font-size: 10.2px;
     }
 }
 /*////////////////////////////////////////////////////PARTNERS////////////////////////////////////////////////////*/
