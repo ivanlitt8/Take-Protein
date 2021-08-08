@@ -362,13 +362,14 @@ span.take{
     margin-bottom: 0px;
 }
 .items{
-    margin-left: 20px;
+    margin-left: 50px;
     font-size: 14px;
     font-weight: 500;
     color: white;
 }
 .selector{
     text-align: right;
+    margin-right: 50px;
 }
 .selector h4, select{
     display: inline;
@@ -582,6 +583,22 @@ i.fa-solid.fa-circle-check {
         font-size: 10.2px;
     }
 }
+@media screen and (max-width: 500px){
+    .product {
+        width: 180px;
+        height: 330px;
+    }
+    .product_fondo-foto {
+        width: 180px;
+    }
+    .data {
+        font-size: 9px;
+    }
+    .product_data h3 {
+        font-size: 15px;
+    }
+}
+
 /*////////////////////////////////////////////////////PARTNERS////////////////////////////////////////////////////*/
 section.partners {
     display: flex;
