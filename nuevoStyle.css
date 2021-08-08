@@ -368,10 +368,7 @@ span.take{
     color: white;
 }
 .selector{
-    position: relative;
-    float: right;
-    bottom: 20px;
-    margin-right: 30px;
+    text-align: right;
 }
 .selector h4, select{
     display: inline;
@@ -815,6 +812,9 @@ footer{
 .card_col1 {
     display: grid;
     place-items: center;
+}
+.col2{
+    display: grid;
 }
 .col2_contenedor {
     background-color: #d4d4d4;
