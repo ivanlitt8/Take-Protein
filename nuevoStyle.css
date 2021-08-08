@@ -361,7 +361,8 @@ span.take{
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.col2 h2{
+.items{
+    margin-left: 20px;
     font-size: 14px;
     font-weight: 500;
     color: white;
